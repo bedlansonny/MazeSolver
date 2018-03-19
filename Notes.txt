@@ -1,0 +1,8 @@
+http://hereandabove.com/maze/mazeorig.form.html
+https://www.youtube.com/watch?v=rop0W4QDOUI
+
+
+File imageFile = new File("maze1.gif");
+BufferedImage image = ImageIO.read(imageFile);
+File outputFile = new File("maze1output.gif");
+ImageIO.write(image, "gif", outputFile);
