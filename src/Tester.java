@@ -18,7 +18,7 @@ public class Tester
         {
             for(int c = 1; c < image.getWidth()-1; c++)
             {
-                isWall[r-1][c-1] = image.getRGB(c,r)==-16777216;
+                isWall[r-1][c-1] = image.getRGB(c,r)!=-1;
                 //System.out.println(image.getRGB(c,r));
                 if(!isWall[r-1][c-1])
                     testOutput.setRGB(c,r,(Color.RED).getRGB());
